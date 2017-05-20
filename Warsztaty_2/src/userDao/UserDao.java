@@ -10,4 +10,7 @@ public interface UserDao {
 	User insert(User user);
 
 	List<User> findAll();
+	
+	void seeAllUsers();
+	
 }
