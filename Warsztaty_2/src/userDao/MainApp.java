@@ -10,12 +10,17 @@ public class MainApp {
 	public static void main(String[] args) {
 		UserDao userDao = new MySqlUserDao("jdbc:mysql://localhost:3306/Warsztaty", "root", "coderslab");
 		User user = new User();
+	
 		
 		ExerciseDao exerciseDao = new MySqlExerciseDao("jdbc:mysql://localhost:3306/Warsztaty", "root", "coderslab");
 		Exercise exercise = new Exercise();
 		
 		SolutionDao solutionDao = new MySqlSolution("jdbc:mysql://localhost:3306/Warsztaty", "root", "coderslab");
 		Solution solution = new Solution();
+		
+	
+		
+		
 		
 		//SOLUTION
 	
@@ -49,20 +54,32 @@ public class MainApp {
 //		exerciseDao.insert(exercise);
 //		System.out.println(exercise);
 //		exerciseDao.loadAllByUserId();
+		
+		
+		
 		//USER 
 		
+		System.out.println("To są wszyscy użytkownicy: ");
 		
-		user.setId(4);
-		user.setName("Basia");
-		user.setSurname("Kozacka");
-		user.setEmail("Ania@email.com");
-		user.setPassword("dziesiec");		
+	//	userDao.seeAllUsers();
+		
+		System.out.println("Menu: ");
+		userDao.menu();
 		
 		
-		userDao.insert(user);
-		System.out.println(user);
-				
-		userDao.findAll();
+		
+		
+//		user.setId(4);
+//		user.setName("Basia");
+//		user.setSurname("Kozacka");
+//		user.setEmail("Ania@email.com");
+//		user.setPassword("dziesiec");		
+//		
+//		
+//		userDao.insert(user);
+//		System.out.println(user);
+//				
+//		userDao.findAll();
 		
 	
 		

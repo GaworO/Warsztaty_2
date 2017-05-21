@@ -11,6 +11,11 @@ public interface UserDao {
 
 	List<User> findAll();
 	
-	void seeAllUsers();
+	List<User> seeAllUsers();
+	List<User> loadAll();
+	List<User >loadById();
 	
+	void menu();
+	void delete();
+	void saveToDB();
 }
