@@ -30,8 +30,16 @@ CREATE TABLE exercise(exercise_id INT NOT NULL AUTO_INCREMENT, id BIGINT,  title
   
   SELECT description FROM soluton WHERE exercise_id = 2 order by upadated ASC;
                         
-                        
-                        
+            
+/* UPDATE USER */
+
+UPDATE user2 SET id = 4, name = 'ania',  surname = 'asa' , email = 'lol' , password=123 WHERE id <> 0;
+
+
+/*DELETE USER */
+
+
+DELETE FROM user2 WHERE id = 3 ;                         
                         
                         
                         
